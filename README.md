@@ -1,4 +1,3 @@
-## README: Comprehensive IMDB Data Analysis for Strategic Film Production Decision-Making
 
 ### Project Overview
 
