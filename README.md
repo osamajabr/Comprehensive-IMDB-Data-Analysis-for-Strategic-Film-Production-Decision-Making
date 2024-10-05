@@ -67,7 +67,7 @@ Visualisations play a crucial role in understanding the underlying distributions
 - **Probability-Probability (P-P) Plot**:
   - A P-P plot was generated to compare the cumulative distribution of the 'gross_to_budget' ratio against a theoretically normal distribution, which is useful for assessing normality.
 
-![Example Image](https://github.com/osamajabr/Comprehensive-IMDB-Data-Analysis-for-Strategic-Film-Production-Decision-Making/blob/main/assets/pp.png?raw=true)
+<img src="https://github.com/osamajabr/Comprehensive-IMDB-Data-Analysis-for-Strategic-Film-Production-Decision-Making/blob/main/assets/pp.png?raw=true" width="500" alt="Example Image">
 
 <br>
 <br>
@@ -75,7 +75,7 @@ Visualisations play a crucial role in understanding the underlying distributions
 - **Empirical Cumulative Distribution Function (ECDF)**:
   - An ECDF plot was used to observe how the empirical distribution of 'gross_to_budget' compares to the true cumulative distribution, providing insights into the proportion of data points below each value.
 
-![Example Image](https://github.com/osamajabr/Comprehensive-IMDB-Data-Analysis-for-Strategic-Film-Production-Decision-Making/blob/main/assets/ECDF.png?raw=true)
+<img src="https://github.com/osamajabr/Comprehensive-IMDB-Data-Analysis-for-Strategic-Film-Production-Decision-Making/blob/main/assets/ECDF.png?raw=true" width="500" alt="Example Image">
 
 <br>
 
