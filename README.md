@@ -37,6 +37,8 @@ The analysis requires the following Python libraries:
   - Removed duplicate movie titles to ensure data uniqueness.
   - After removing duplicates, 101 movie titles were eliminated, leaving 3655 unique entries for analysis.
 
+<br>
+
 ### Exploratory Data Analysis (EDA)
 
 #### Statistical Summary
@@ -50,33 +52,48 @@ Visualisations play a crucial role in understanding the underlying distributions
   - A box plot was created for the 'gross_to_budget' ratio to visually represent the distribution's quartiles and outliers, which helps in understanding the spread and central tendency of this financial metric.
 
 
-![Example Image]((https://github.com/osamajabr/Comprehensive-IMDB-Data-Analysis-for-Strategic-Film-Production-Decision-Making/blob/8fd7e6004e683d3432960c24fb0b9f4326c58c13/assets/box.png))
+![Example Image](https://github.com/osamajabr/Comprehensive-IMDB-Data-Analysis-for-Strategic-Film-Production-Decision-Making/blob/main/assets/box.png?raw=true)
+
+<br>
+<br>
 
 - **Histogram and KDE Plot**:
   - A histogram combined with a Kernel Density Estimate (KDE) was used for the 'gross_to_budget' ratio. This visualisation helps to understand the frequency distribution and the smoothness of the data distribution across the dataset.
 
+![Example Image](https://github.com/osamajabr/Comprehensive-IMDB-Data-Analysis-for-Strategic-Film-Production-Decision-Making/blob/main/assets/kde.png?raw=true)
+
+<br>
+<br>
+
 - **Probability-Probability (P-P) Plot**:
   - A P-P plot was generated to compare the cumulative distribution of the 'gross_to_budget' ratio against a theoretically normal distribution, which is useful for assessing normality.
+
+![Example Image](https://github.com/osamajabr/Comprehensive-IMDB-Data-Analysis-for-Strategic-Film-Production-Decision-Making/blob/main/assets/pp.png?raw=true)
+
+<br>
+<br>
 
 - **Empirical Cumulative Distribution Function (ECDF)**:
   - An ECDF plot was used to observe how the empirical distribution of 'gross_to_budget' compares to the true cumulative distribution, providing insights into the proportion of data points below each value.
 
-These visualisations were instrumental in identifying key trends, distributions, and potential anomalies within the variables such as 'gross_to_budget', enhancing the analytical depth and aiding in decision-making processes related to film production investments.
+![Example Image](https://github.com/osamajabr/Comprehensive-IMDB-Data-Analysis-for-Strategic-Film-Production-Decision-Making/blob/main/assets/ECDF.png?raw=true)
 
-#### Statistical Analysis and Hypothesis Testing
+<br>
 
-- **Correlation Analysis**: 
-  - Investigated the relationships between movie budgets, gross earnings, and IMDB ratings. Found significant correlations between budget and gross earnings, but weaker correlations between IMDB ratings and financial success.
+#### Hypothesis Testing
+
 - **Bootstrap Hypothesis Testing**:
-  - Implemented bootstrap tests to assess the impact of IMDB ratings on financial success. The results indicated no strong evidence that higher IMDB ratings are associated with higher financial returns. This suggests that other factors, perhaps genre or star power, might be more influential in determining a movie's financial success.
 
-#### Actionable Insights and Recommendations
+Bootstrap tests were performed to evaluate the impact of IMDB ratings and movie duration on financial success, specifically looking at the gross-to-budget ratio:
 
-- **Genre and Budget Analysis**:
-  - Identified genres with higher average returns, recommending a focus on Action and Comedy for future productions.
-  - Suggested optimal budget ranges based on historical data to maximize returns without the heightened risks associated with very high-budget films.
-- **Star Power**:
-  - Highlighted the importance of casting popular actors. The presence of well-known actors was strongly correlated with higher gross earnings, suggesting their significance in attracting larger audiences.
+- **IMDB Ratings**: The analysis found significant evidence that movies with an IMDB rating of 7 or higher tend to have a greater average gross-to-budget ratio compared to movies with lower ratings. This indicates that higher IMDB ratings are positively associated with financial returns, suggesting that ratings are an important factor in predicting a movie's financial success.
+
+- **Movie Duration**: Similarly, it was found that movies with longer durations (106 minutes or more) consistently show higher average gross-to-budget ratios than shorter films. This implies that longer movies, which often involve more detailed storytelling and potentially higher production values, are likely to be more financially successful.
+
+These results suggest that both the perceived quality of a movie, reflected in higher IMDB ratings, and its duration are important predictors of financial success.
+
+<br>
+
 
 #### Advanced Statistical Findings
 
@@ -85,18 +102,23 @@ These visualisations were instrumental in identifying key trends, distributions,
 - **Non-parametric Analysis**:
   - Due to the non-normal distribution of data, non-parametric methods such as bootstrapping were used to validate the findings from hypothesis testing.
 
+
 ### Conclusions and Strategic Recommendations
 
-Based on the comprehensive analysis, strategic recommendations were formulated to guide future film productions:
-- **Invest in Profitable Genres**: Focusing investments on genres like Action and Comedy which have historically shown financial success.
-- **Efficient Budgeting**: Advocating for mid-range budgets that have demonstrated the best return on investment ratios.
-- **Utilization of Star Power**: Emphasizing the need to cast well-known actors to enhance marketability and audience draw.
 
-#### Further Insights and Recommendations
+Based on the comprehensive analysis, several strategic recommendations have been formulated to guide the future film productions and optimise financial success:
 
-The analysis also highlighted the complex interplay between various factors such as genre, budget size, and cast popularity, which should be considered in future production decisions.
+- **Invest in Proven Genres and Formats**: Prioritise investments in the **Drama** genre, which has historically demonstrated financial success, particularly within the budget constraint of **£1.5 million**. Additionally, focus on producing films that are coloured and predominantly in the English language, attributes that align with the successful characteristics of historically profitable films.
 
-### Contribution and Collaboration
 
-For additional insights, contributions, or discussions on the methodologies used in this analysis, stakeholders and external reviewers are encouraged to contact the data science team at SussexBudgetProductions or participate in discussions through the project's GitHub repository.
+- **Optimal Film Duration and Rating**: Aim to produce the movie to with durations of **106 minutes** or longer, which have shown to be more successful. Also, consider adhering to an **R rating** and an aspect ratio of **1.85**, as these characteristics were common among top-performing films.
+
+
+
+- **Specific Recommendations for Director and Actors**:
+- 
+  - **Primary Recommendation**: Collaborate with the crew that produced **"Urbania"**, particularly director **Jon Shear**, and actors **Dan Futterman**, **Josh Hamilton**, and **Matt Keeslar**. This film exhibited the highest gross-to-budget ratio of **4.564973**, indicating a highly profitable model.
+  - **Alternative Recommendation**: If the primary choice is unavailable, consider the team behind **"Half Nelson"**, directed by **Ryan Fleck** with actors **Ryan Gosling**, **Tristan Mack Wilds**, and **Jeff Lima**. This film also showcased a high gross-to-budget ratio and significant audience popularity, as evidenced by a high number of total likes.
+
+These targeted recommendations are designed to utilise historical data and proven success factors to enhance the commercial outcomes of future film projects.
 
